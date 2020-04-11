@@ -9,6 +9,8 @@ body{
 }
 h1{
     font-size: 40px;
+    color: #fff;
+    text-shadow: 0px 3px 12px #000000;
 }
 .content{
     width: 60%;
