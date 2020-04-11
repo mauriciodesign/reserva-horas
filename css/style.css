@@ -1,0 +1,128 @@
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #e1eefc;
+
+}
+h1{
+    font-size: 40px;
+}
+.content{
+    width: 60%;
+    display: flex;
+    border-radius: 30px;
+    background: #fff;
+    -webkit-box-shadow: 0px 4px 23px -9px rgba(0,0,0,0.42);
+    -moz-box-shadow: 0px 4px 23px -9px rgba(0,0,0,0.42);
+    box-shadow: 0px 4px 23px -9px rgba(0,0,0,0.42);  
+}
+
+.img{
+    background:url('../img/hospital.jpg') center;
+    background-size: cover;
+    width: 40%;
+    color: #fff;
+    padding: 60px 40px;
+    border-radius: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content:space-between;
+
+}
+.form{
+    width: 70%;
+    padding: 60px 0px;
+
+}
+form{
+    margin: 0 auto;
+    width: 70%;
+
+}
+.formulario{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+input, select{
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+.label {
+    display: flex;
+    flex-wrap: wrap;
+    width: 45%;
+    margin-top: 10px;
+}
+#especialidad {
+    width: 100%;
+}
+#buttonReserv{
+    padding: 15px;
+    background: #fff;
+    color: #2d65ff;
+    width: 100%;
+    margin: 50px auto 0;
+    border-radius: 10px;
+    border: 2px solid #2d65ff;
+    cursor: pointer;
+    font-size: 18px;
+    transition: ease .5s;
+}
+#buttonReserv:hover{
+    background: #2d65ff;
+    color: #fff;
+}
+.mensaje {
+    font-size: 17px;
+    line-height: 35px;
+}
+@media (max-width: 1400px){
+    body{
+        margin: 40px 0;
+        height: auto;
+    }
+    .formulario{
+        display: block;
+    }
+    .label{
+        width: auto;
+    }
+    .content{
+        width: 80%;
+    }
+}
+@media (max-width: 790px){
+    .content{
+        flex-direction: column;
+    }
+    .form{
+        width: 100%;
+    }
+    .img{
+        width: 100%;
+        text-align: center;
+        padding: 50px 0;
+    }
+    h1{
+        margin: 0 auto;
+    }
+}
+@media (max-width: 500px){
+    .content{
+        width: 90%;
+    }
+    form {
+        width: 80%;
+    }
+    .form{
+        width: 100%;
+        padding: 40px 0px 60px;
+    }
+}

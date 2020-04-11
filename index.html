@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="content">
+
+        <div class="img">
+            <h1>Formulario de hora</h1>
+        </div>
+        <div class="form">
+            <form name="formulario" class="formulario" id="formulario">
+                <div class="label">
+                    <label for="">Rut</label>
+                    <input type="text" id="rut" placeholder="Ej: 26.738.311-8">
+                </div>
+                <div class="label">
+                    <label for="">Nombres</label>
+                    <input type="text" id="nombres" placeholder="Tu nombres">
+                </div>
+                <div class="label">
+                    <label for="">Apellidos</label>
+                    <input type="text" id="apellidos" placeholder="Tu apellidos">
+                </div>
+
+                <div class="label">
+                    <label for="">Edad</label>
+                    <input type="text" id="edad" placeholder="Tu edad">
+                </div>
+                <div class="label">
+                    <label for="">Email</label>
+                    <input type="email" id="email" placeholder="ejemplo@ejemplo.com">
+                </div>
+                <div class="label">
+                    <label for="">Especialidades</label>
+                    <select id="especialidad">
+                        <option disabled selected>Seleccione una Especialidad</option>
+                        <option value="Radiologia">Radiologia</option>
+                        <option value="Traumatologia">Traumatologia</option>
+                        <option value="dental">dental</option>
+                    </select>
+                </div>
+                <div class="label">
+                    <label for="">Ingrese una fecha</label>
+                    <input type="text" id="fecha" placeholder="Ej: (d/m/aaa)">
+                </div>
+                <div class="label">
+                    <label for="">Hora</label>
+                    <input type="text" id="hora" placeholder="Ej 10:20">
+                </div>
+                <button id="buttonReserv"> Reservar</button>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
