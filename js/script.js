@@ -1,6 +1,15 @@
 
 document.getElementById('buttonReserv').addEventListener('click', validar);
 
+alert = document.getElementById("alert")
+
+function alertTime(text) {
+    alert.style.display = 'block';
+    alert.innerHTML = text;
+    setTimeout(() => {
+        alert.style.display = 'none'; 
+    }, 3000);
+} 
 
 function validar(e) {
     e.preventDefault();
@@ -22,41 +31,47 @@ function validar(e) {
     let validarNumber = /^[0-9]+$/;
     let validarEmail = /\w+@\w+\.+[a-z]/;
     let validarFecha = /^(?:0?[1-9]|1[1-2])([\-/.])(3[01]|[12][0-9]|0?[1-9])\1\d{4}$/;
-    let validarHora = /^([01]?[0-9]|2[0-3]):[0-5][0-9]$/;
 
 
     if (!rut.match(validarRut)) {
-        alert('Tiene que agregar un rut valido');
+        let textAlert = "Tiene que agregar un rut valido";
+        alertTime(textAlert)
         return false;
     }
     
     if (!nombre.match(validarText) || !apellido.match(validarText)) {
-        alert('Tiene que agregar un nombre');
+        let textAlert = "Tiene que agregar un nombre";
+        alertTime(textAlert)
         return false;
     }
 
     if (!edad.match(validarNumber) || edad > 100) {
-        alert('Tiene que agregar una edad valida');
+        let textAlert = "Tiene que agregar una edad valida";
+        alertTime(textAlert)
         return false;
     }
 
     if (!email.match(validarEmail)) {
-        alert('Tiene que agregar un mail valido');
+        let textAlert = "Tiene que agregar un mail valido";
+        alertTime(textAlert)
         return false;
     }
 
     if (especialidad === 'Seleccione una Especialidad') {
-        alert('Seleccione una Especialidad');
+        let textAlert = "Seleccione una Especialidad";
+        alertTime(textAlert)
         return false;
     }
 
     if (!fecha.match(validarFecha)) {
-        alert('Tiene que agregar una fecha valida');
+        let textAlert = "Tiene que agregar una fecha valida";
+        alertTime(textAlert)
         return false;
     }
     
-    if (!hora.match(validarHora)) {
-        alert('Tiene que agregar una hora correcta');
+    if (hora === 'Seleccione una hora') {
+        let textAlert = "Seleccione una hora";
+        alertTime(textAlert)
         return false;
     }    
     

@@ -2,7 +2,7 @@ body{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-    height: 100vh;
+    height: 97vh;
     font-family: Arial, Helvetica, sans-serif;
     background: #e1eefc;
 
@@ -84,6 +84,16 @@ input, select{
 .mensaje {
     font-size: 17px;
     line-height: 35px;
+}
+#alert{
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    top: 0;
+    color: #721c24;
+    background-color: #f8d7da;
+    padding: .75rem 1.25rem;
+    border: 1px solid #ffbdc3;
 }
 @media (max-width: 1400px){
     body{
