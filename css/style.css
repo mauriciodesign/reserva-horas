@@ -55,6 +55,16 @@ input, select{
     border: 1px solid #ccc;
     border-radius: 5px;
     width: 100%;
+    outline: -webkit-focus-ring-color auto 0px;
+    transition: ease .5s;
+}
+option:hover{
+    background: #2d65ff;
+    color: #fff;
+}
+input:focus, select:focus{
+    border: 1px solid #2d65ff;
+    outline: -webkit-focus-ring-color auto 0px;
 }
 .label {
     display: flex;
@@ -81,6 +91,9 @@ input, select{
     background: #2d65ff;
     color: #fff;
 }
+#buttonReserv:focus{
+    outline: -webkit-focus-ring-color auto 0px;
+}
 .mensaje {
     font-size: 17px;
     line-height: 35px;
@@ -97,7 +110,6 @@ input, select{
 }
 @media (max-width: 1400px){
     body{
-        margin: 40px 0;
         height: auto;
     }
     .formulario{
@@ -108,6 +120,7 @@ input, select{
     }
     .content{
         width: 80%;
+        margin: 50px 0;
     }
 }
 @media (max-width: 790px){
